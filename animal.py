@@ -49,7 +49,8 @@ class Dog(Animal):
         return "Woof!"
     
 class Cat(Animal):
-    def __init__(self, indoor_only: str):
+    def __init__(self, name: str, species: str, age: int, adopted: bool, indoor_only: bool):
+        super().__init__(name, species, age, adopted)
         self.__indoor_only = indoor_only
 
     def animal_get_breed(self):
@@ -60,11 +61,3 @@ class Cat(Animal):
 
     def make_sound(self):
         return "Meow!"
-    
-
-animal = Dog("Max", "Dog", 6, True, "Golden_Retriever")
-print(animal.animal_get_name())
-print(animal.animal_get_species())
-print(animal.animal_get_age())
-print(animal.animal_get_adopted())
-print(animal.animal_get_breed())
