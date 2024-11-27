@@ -5,28 +5,28 @@ class Animal:
         self.__age = age
         self.__adopted = adopted
 
-    def animal_get_name(self):
+    def get_name(self):
         return self.__name
     
-    def animal_get_species(self):
+    def get_species(self):
         return self.__species
     
-    def animal_get_age(self):
+    def get_age(self):
         return self.__age
     
-    def animal_get_adopted(self):
+    def get_adopted(self):
         return self.__adopted
     
-    def animal_set_name(self, new_name):
+    def set_name(self, new_name):
         self.__name = new_name
     
-    def animal_set_species(self, new_species):
+    def set_species(self, new_species):
         self.__species = new_species
     
-    def animal_set_age(self, new_age):
+    def set_age(self, new_age):
         self.__age = new_age
     
-    def animal_set_adopted(self, new_adopted):
+    def set_adopted(self, new_adopted):
         self.__adopted = new_adopted
 
     def make_sound(self):
