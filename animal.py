@@ -35,7 +35,8 @@ class Animal:
     
 
 class Dog(Animal):
-    def __init__(self, breed: str):
+    def __init__(self, name: str, species: str, age: int, adopted: bool, breed: str):
+        super().__init__(name, species, age, adopted)
         self.__breed = breed
 
     def animal_get_breed(self):
@@ -59,3 +60,11 @@ class Cat(Animal):
 
     def make_sound(self):
         return "Meow!"
+    
+
+animal = Dog("Max", "Dog", 6, True, "Golden_Retriever")
+print(animal.animal_get_name())
+print(animal.animal_get_species())
+print(animal.animal_get_age())
+print(animal.animal_get_adopted())
+print(animal.animal_get_breed())
