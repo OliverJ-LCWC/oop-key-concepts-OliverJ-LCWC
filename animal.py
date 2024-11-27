@@ -35,15 +35,27 @@ class Animal:
     
 
 class Dog(Animal):
-    def new_animal(self, breed: str):
-        return breed
+    def __init__(self, breed: str):
+        self.__breed = breed
+
+    def animal_get_breed(self):
+        return self.__breed
+    
+    def animal_set_name(self, new_breed):
+        self.__breed = new_breed
     
     def make_sound(self):
         return "Woof!"
     
 class Cat(Animal):
-    def new_animal(self, indoor_only: bool):
-        return indoor_only
+    def __init__(self, indoor_only: str):
+        self.__indoor_only = indoor_only
+
+    def animal_get_breed(self):
+        return self.__indoor_only
     
+    def animal_set_name(self, new_indoor_only):
+        self.__indoor_only = new_indoor_only
+
     def make_sound(self):
         return "Meow!"
