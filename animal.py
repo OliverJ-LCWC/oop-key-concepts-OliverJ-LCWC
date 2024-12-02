@@ -65,5 +65,19 @@ class Cat(Animal):
     def make_sound(self):
         return "Meow!"
     
+class Cat(Animal):
+    def __init__(self, name: str, species: str, age: int, adopted: bool, indoor_only: bool):
+        super().__init__(name, species, age, adopted)
+        self.__indoor_only = indoor_only
+
+    def get_indoor_only(self):
+        return self.__indoor_only
+    
+    def set_indoor_only(self, new_indoor_only):
+        self.__indoor_only = new_indoor_only
+
+    def make_sound(self):
+        return "Meow!"
+    
     def __str__(self):
-        return f"Name: {self.get_name()}\nSpecies: {self.get_species()}\nIndoor_Only: {self.get_indoor_only()}\nAge: {self.get_age()}\nAdopted status: {self.get_adopted()}"
+        return f"Name: {self.get_name()}\nSpecies: {self.get_species()}\nIndoor only status: {self.get_indoor_only()}\nAge: {self.get_age()}\nAdopted status: {self.get_adopted()}"
