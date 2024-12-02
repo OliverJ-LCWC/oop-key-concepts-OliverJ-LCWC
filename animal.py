@@ -66,4 +66,4 @@ class Cat(Animal):
         return "Meow!"
     
     def __str__(self):
-        return f"{self.name()} {self.species()}"
+        return f"Name: {self.get_name()}\nSpecies: {self.get_species()}\nIndoor_Only: {self.get_indoor_only()}\nAge: {self.get_age()}\nAdopted status: {self.get_adopted()}"
