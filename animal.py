@@ -33,7 +33,6 @@ class Animal:
         return "This animal makes a sound"
     
     
-
 class Dog(Animal):
     def __init__(self, name: str, species: str, age: int, adopted: bool, breed: str):
         super().__init__(name, species, age, adopted)
@@ -49,8 +48,9 @@ class Dog(Animal):
         return "Woof!"
     
     def __str__(self):
-        return f"{self.name} {self.species} {self.breed}"
+        return f"{self.get_name()} {self.get_species()} {self.get_breed()}"
     
+
 class Cat(Animal):
     def __init__(self, name: str, species: str, age: int, adopted: bool, indoor_only: bool):
         super().__init__(name, species, age, adopted)
@@ -66,4 +66,4 @@ class Cat(Animal):
         return "Meow!"
     
     def __str__(self):
-        return f"{self.name} {self.species}"
+        return f"{self.get_name()} {self.get_species()}"
