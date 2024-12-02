@@ -41,8 +41,8 @@ class Dog(Animal):
 
     def get_breed(self):
         return self.__breed
-    
-    def set_name(self, new_breed):
+
+    def set_breed(self, new_breed):
         self.__breed = new_breed
     
     def make_sound(self):
@@ -59,7 +59,7 @@ class Cat(Animal):
     def get_indoor_only(self):
         return self.__indoor_only
     
-    def set_name(self, new_indoor_only):
+    def set_indoor_only(self, new_indoor_only):
         self.__indoor_only = new_indoor_only
 
     def make_sound(self):
