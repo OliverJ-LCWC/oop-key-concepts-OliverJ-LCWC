@@ -48,7 +48,7 @@ class Dog(Animal):
         return "Woof!"
     
     def __str__(self):
-        return f"{self.name()} {self.species()} {self.breed()}"
+        return f"Name: {self.get_name()}\nSpecies: {self.get_species()}\nBreed: {self.get_breed()}\nAge: {self.get_age()}\nAdopted status: {self.get_adopted()}"
     
 
 class Cat(Animal):
