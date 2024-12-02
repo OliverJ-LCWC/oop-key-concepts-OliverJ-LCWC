@@ -56,10 +56,10 @@ class Cat(Animal):
         super().__init__(name, species, age, adopted)
         self.__indoor_only = indoor_only
 
-    def animal_get_breed(self):
+    def get_indoor_only(self):
         return self.__indoor_only
     
-    def animal_set_name(self, new_indoor_only):
+    def set_name(self, new_indoor_only):
         self.__indoor_only = new_indoor_only
 
     def make_sound(self):
