@@ -39,10 +39,10 @@ class Dog(Animal):
         super().__init__(name, species, age, adopted)
         self.__breed = breed
 
-    def animal_get_breed(self):
+    def get_breed(self):
         return self.__breed
     
-    def animal_set_name(self, new_breed):
+    def set_name(self, new_breed):
         self.__breed = new_breed
     
     def make_sound(self):
